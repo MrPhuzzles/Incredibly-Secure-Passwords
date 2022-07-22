@@ -16,14 +16,21 @@ const incSymbols = document.getElementById("symbols");
 
 // Generate password function if criteria is valid!
 const generatePassword = (length, characters) => {
-
-  let password = "";
-  for (let i = 0; i < length; i++) {
-    password += characters.charAt(
-      Math.floor(Math.random() * characters.length)
-    );
+  // If there are no characters to fulfil password, then this code doesn't run! 
+  if (characters.length !== 0) {
+    let password = "";
+    for (let i = 0; i < length; i++) {
+      password += characters.charAt(
+        Math.floor(Math.random() * characters.length)
+      );
+    }
+    return password;
   }
-  return password;
+  // Webpage reaction when user has an invalid selection for password
+  else {
+    alert("Please select at least 1 of the password criteria!");
+    location.reload();
+  }
 };
 
 // Add event listener to generate button, adds each criteria that is selected by user
