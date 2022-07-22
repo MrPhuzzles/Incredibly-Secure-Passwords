@@ -18,5 +18,14 @@ page is refreshed for the user. I found this to be much easier on the user and m
 * CSS
 * JavaScript
 
+## Website
+
+[Incredibly Secure Password Generator](https://mrphuzzles.github.io/Incredibly-Secure-Passwords/)
+
+## Screenshots
+
+![Screenshot of password generator on first load](./Screenshots/Screenshot1.png)
+![Screenshot of password generator with a randomly generated password](./Screenshots/Screenshot2.png)
+
 ## Credits
 Initial starter code provided by [Coding Bootcamp](https://github.com/coding-boot-camp/friendly-parakeet) 
