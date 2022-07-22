@@ -14,6 +14,13 @@ const incLowerCase = document.getElementById("lowercase");
 const incUpperCase = document.getElementById("uppercase");
 const incSymbols = document.getElementById("symbols");
 
+// Active changes to show password length when password length slider is adjusted.
+const passLength = document.getElementById("passwordlength");
+function change() {
+  // Sets the text of range label to it's current value
+  passLength.innerText = length.value;
+}
+
 // Generate password function if criteria is valid!
 const generatePassword = (length, characters) => {
   // If there are no characters to fulfil password, then this code doesn't run! 
