@@ -21,6 +21,16 @@ function change() {
   passLength.innerText = length.value;
 }
 
+//Function that allows user to change length by scrolling wheel on mouse
+length.addEventListener("wheel", function (e) {
+  if (e.deltaY < 0) {
+    length.valueAsNumber += 1;
+  } else {
+    length.value -= 1;
+  }
+  change();
+})
+
 // Generate password function if criteria is valid!
 const generatePassword = (length, characters) => {
   // If there are no characters to fulfil password, then this code doesn't run! 

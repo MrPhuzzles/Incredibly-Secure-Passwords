@@ -4,6 +4,8 @@
 Incredibly Secure Passwords is a nifty password generator that allows you to keep your various accounts safe from any potential breach. 
 You can choose from multiple criteria in-line with your comfortability and even customize the length!
 
+Below you can read through my thought process while editing the starter code for this app. There will also be screenshots and a delpoyed live URL below too.
+
 ## The Journey!
 I started off simple by declaring the variables needed in terms of password criteria. This was mainly just lower and upper case characters, numbers and symbols. Then I stored the password area into a variable so it could be selected later.
 
