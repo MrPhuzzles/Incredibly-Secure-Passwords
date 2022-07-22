@@ -1,17 +1,13 @@
 // Assignment code here
 
+// Variable Declerations
+const generateBtn = document.querySelector("#generate");
+const passwordTxt = document.getElementById("password");
+const lower = "abcdefghijklmnopqrstuvwxyz";
+const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numbers = "0123456789";
+const symbols = "!@#$%^&*_-+=";
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
+// Add event listener to generate button, adds each criteria that is selected by user
 generateBtn.addEventListener("click", writePassword);
